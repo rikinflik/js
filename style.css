@@ -5,7 +5,6 @@
 body, input, textarea {
     font: 1em/1.5 Helvetica, sans-serif;
 	font-weight: 100;
-	background-color: #D3D3D3;
 }
 li {
 	list-style: none;
@@ -31,19 +30,28 @@ li {
 	/*background-color: rgba(244,255,234,0.5);*/
 	width: 440px;
 	float: left;
+	margin-bottom: 30px;
 }
 .login {
 	margin-right: 15px;
 }
-.login li {
+.login li, .personal li {
 	margin-bottom: 10px;
-	border-bottom: 1px solid black;
 }
 .personal {
 	margin-left: 15px;
 }
-form {
-	/*display: inline-block;*/
+
+.telf, .mov {
+	width: 50%;
+	float: left;
+}
+.telf {
+	width: 48%;
+	margin-right: 2%;
+}
+.personal span.estado {
+	background-color: rgba(138, 72, 0, 0.5);
 }
 label, input {
 	display: block;
@@ -54,14 +62,20 @@ input {
     height: 100%;
     padding: 1.25em 0 1em;
     outline: 0;
+   	background-color: #f1f1f1;
+}
+input:hover {
+	background-color: white;
 }
 label {
-    font-size: .8125em; /* 13/16 */
+    font-size: .7125em; /* 13/16 */
+    text-transform: uppercase;
     /*position: absolute;*/
     top: 1.23em;
     left: 1.23em;
     color: #f1773b;
     opacity: 1;
+    margin: 10px 0 5px;
 }
 span.estado {
 	display: inline-block;
@@ -72,9 +86,11 @@ span.estado {
 	font-size: 11px;
 }
 input[type="submit"] {
-    background: white;
+    background: #E5E7B3;
+    margin-top: 5%;
     margin-bottom: 1em;
-    color: white;
+    clear: both;
+    color: black;
     padding: .75em;
     -webkit-appearance: none; /* remove default browser <button> styling */
     -webkit-transition: .333s ease;
@@ -83,7 +99,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
    /* -webkit-transform: scale(1.025);
     transform: scale(1.025);*/
-	background-color: #f3f3f3;
+	background-color: rgba(0,198,0,0.5);
 	color:black;
     cursor: pointer;
 }
