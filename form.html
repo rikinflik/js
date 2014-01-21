@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join! Register in J&B</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+	<div class="head">
+		<h1>Join!</h1>
+	</div>
+	<div class="sidebar">
+		<ul>
+			<li>Join</li>
+			<li>Log in</li>
+			<li>Profile</li>
+			<li>View</li>
+			<li>Upload</li>
+		</ul>
+	</div>
+	<div class="form">
+			<form action="form.html">
+			<ul class="login">
+				<li id="login">
+					<label for="login">login</label>
+					<input type="text" name="login" onblur="check('login')">
+					<span class="estado"></span>
+				</li>
+				
+				<li id="mail">
+					<label for="mail">e-mail</label>
+					<input type="email" name="email" onblur="check('mail')">
+					<span class="estado"></span>
+				</li>
+				<li id="password">
+					<label for="password">password</label>
+					<input type="password" onblur="check('password')">
+					<span class="estado"></span>
+				</li>
+				
+				<li id="repass">
+					<label for="repass">repeat password</label>
+					<input type="password" onblur="check('repass')">
+					<span class="estado"></span>
+				</li>
+			</ul>
+
+			<div class="personal">
+				<label for="nif">nif</label>
+				<input type="text">
+				<label for="nombre">nombre</label>
+				<input type="text">
+				<label for="apellido">apellido</label>
+				<input type="text">
+				<label for="telf">teléfono</label>
+				<input type="text">
+				<label for="mov">móvil</label>
+				<input type="text">
+			</div>
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+</div>
+<script src="script_v2.js"></script>
+</body>
+</html>

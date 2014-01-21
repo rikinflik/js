@@ -1,0 +1,93 @@
+* {
+	margin:0;
+	padding:0;
+}
+body, input, textarea {
+    font: 1em/1.5 Helvetica, sans-serif;
+	font-weight: 100;
+	background-color: #D3D3D3;
+}
+li {
+	list-style: none;
+}
+.wrap {
+	width: 910px;
+	margin: 0 auto;
+}
+.head {
+	background-color: rgba(244,255,234,0.5);
+	margin: 1% 0;
+}
+.sidebar {
+	background-color: rgba(244,255,234,0.5);
+}
+.sidebar ul li {
+	display: inline-table;
+}
+.form {
+	margin-top: 10px;
+}
+.login, .personal {
+	/*background-color: rgba(244,255,234,0.5);*/
+	width: 440px;
+	float: left;
+}
+.login {
+	margin-right: 15px;
+}
+.login li {
+	margin-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+.personal {
+	margin-left: 15px;
+}
+form {
+	/*display: inline-block;*/
+}
+label, input {
+	display: block;
+	border:0;
+}
+input {
+	width: 100%;
+    height: 100%;
+    padding: 1.25em 0 1em;
+    outline: 0;
+}
+label {
+    font-size: .8125em; /* 13/16 */
+    /*position: absolute;*/
+    top: 1.23em;
+    left: 1.23em;
+    color: #f1773b;
+    opacity: 1;
+}
+span.estado {
+	display: inline-block;
+	background-color: rgba(255,0,0,0.5);
+	padding: .25em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+input[type="submit"] {
+    background: white;
+    margin-bottom: 1em;
+    color: white;
+    padding: .75em;
+    -webkit-appearance: none; /* remove default browser <button> styling */
+    -webkit-transition: .333s ease;
+    transition: .333s ease;
+}
+input[type="submit"]:hover {
+   /* -webkit-transform: scale(1.025);
+    transform: scale(1.025);*/
+	background-color: #f3f3f3;
+	color:black;
+    cursor: pointer;
+}
+input[type="submit"]:active {
+    -webkit-transform: scale(.975);
+    transform: scale(.975);
+}
