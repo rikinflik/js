@@ -24,7 +24,7 @@ li {
 	display: inline-table;
 }
 .form {
-	margin-top: 10px;
+	margin-top: 5%;
 }
 .login, .personal {
 	/*background-color: rgba(244,255,234,0.5);*/
@@ -41,7 +41,12 @@ li {
 .personal {
 	margin-left: 15px;
 }
-
+.login h3, .personal h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
+}
 .telf, .mov {
 	width: 50%;
 	float: left;
@@ -85,7 +90,7 @@ span.estado {
 	margin-bottom: 5px;
 	font-size: 11px;
 }
-input[name="submit"] {
+input[type="submit"] {
     background: #E5E7B3;
     margin-top: 5%;
     margin-bottom: 1em;
@@ -96,14 +101,14 @@ input[name="submit"] {
     -webkit-transition: .333s ease;
     transition: .333s ease;
 }
-input[name="submit"]:hover {
+input[type="submit"]:hover {
    /* -webkit-transform: scale(1.025);
     transform: scale(1.025);*/
 	background-color: rgba(0,198,0,0.5);
 	color:black;
     cursor: pointer;
 }
-input[name="submit"]:active {
+input[type="submit"]:active {
     -webkit-transform: scale(.975);
     transform: scale(.975);
 }
