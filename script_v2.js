@@ -53,9 +53,14 @@
 	}
 
 	function checkGo()	
+<<<<<<< HEAD
+	{
+		document.write("Hello World!");
+=======
 	{	
 		
 		document.getElementById('formulario').submit();
+>>>>>>> 3ed22f68f3c682fffe92d26a6ead92da33e36b49
 	}
 
 	/**
@@ -105,6 +110,44 @@
 		var check = false,
 			firstPass = document.getElementById('password').getElementsByTagName('input')[0].value;
 		//console.log(firstPass);
+<<<<<<< HEAD
+		if (largo(param) && param == firstPass) {
+			check = true;
+		} 
+		return check;
+
+	}
+	/*
+	* Funcion para validar el DNI
+	*/
+	function validaLletraDni(dni)
+	{	
+
+		var dniCorrecte=false;
+		//possibles lletres pel dni
+		var arrayLetras = new Array ("T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E");
+		//extraigo letra del dni para comparar
+		var letra = dni.charAt(dni.length-1);
+		//paso a mayúsculas
+		letra = letra.toUpperCase();
+		//alert(letra);
+		//extraigo numero del dni para calcuar modulo
+		var numDni = dni.substr(0,8);
+		//convierto string a numero entero
+		numDni = parseInt(numDni);
+		//el modulo 23 es igual a posicion de array de letras
+		var resultado = numDni % 23;
+		var letraOk = arrayLetras[resultado];
+		//si son iguales devuelve true, sino devuelve false
+		if (letraOk == letra) {
+			dniCorrecte = true;
+		} else {
+			dniCorrecte = false;
+		}
+		return dniCorrecte;
+	}
+	/*
+=======
 		if ( param == firstPass ) {
 			check = true;
 		} 
@@ -141,6 +184,7 @@
 		return dniCorrecte;
 	}
 	/*
+>>>>>>> 3ed22f68f3c682fffe92d26a6ead92da33e36b49
 	* Funcion que sirve para filtrar el tipo de mensaje a mostrar segun el error
 	* @param: ID de la casilla
 	* @return: el msj segun el ID

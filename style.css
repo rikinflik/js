@@ -90,7 +90,15 @@ span.estado {
 	margin-bottom: 5px;
 	font-size: 11px;
 }
+<<<<<<< HEAD
 input[type="submit"] {
+=======
+<<<<<<< HEAD
+input[type="submit"] {
+=======
+input[name="submit"] {
+>>>>>>> 3ed22f68f3c682fffe92d26a6ead92da33e36b49
+>>>>>>> formulario1
     background: #E5E7B3;
     margin-top: 5%;
     margin-bottom: 1em;
