@@ -85,7 +85,11 @@ span.estado {
 	margin-bottom: 5px;
 	font-size: 11px;
 }
+<<<<<<< HEAD
 input[type="submit"] {
+=======
+input[name="submit"] {
+>>>>>>> 3ed22f68f3c682fffe92d26a6ead92da33e36b49
     background: #E5E7B3;
     margin-top: 5%;
     margin-bottom: 1em;
@@ -96,14 +100,14 @@ input[type="submit"] {
     -webkit-transition: .333s ease;
     transition: .333s ease;
 }
-input[type="submit"]:hover {
+input[name="submit"]:hover {
    /* -webkit-transform: scale(1.025);
     transform: scale(1.025);*/
 	background-color: rgba(0,198,0,0.5);
 	color:black;
     cursor: pointer;
 }
-input[type="submit"]:active {
+input[name="submit"]:active {
     -webkit-transform: scale(.975);
     transform: scale(.975);
 }
