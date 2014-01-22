@@ -53,14 +53,9 @@
 	}
 
 	function checkGo()	
-<<<<<<< HEAD
-	{
-		document.write("Hello World!");
-=======
 	{	
 		
 		document.getElementById('formulario').submit();
->>>>>>> 3ed22f68f3c682fffe92d26a6ead92da33e36b49
 	}
 
 	/**
@@ -110,8 +105,7 @@
 		var check = false,
 			firstPass = document.getElementById('password').getElementsByTagName('input')[0].value;
 		//console.log(firstPass);
-<<<<<<< HEAD
-		if (largo(param) && param == firstPass) {
+		if ( param == firstPass) {
 			check = true;
 		} 
 		return check;
@@ -146,14 +140,7 @@
 		}
 		return dniCorrecte;
 	}
-	/*
-=======
-		if ( param == firstPass ) {
-			check = true;
-		} 
-		return check;
-
-	}
+	
 	/*
 	* Funcion para validar el DNI
 	*/
@@ -184,7 +171,6 @@
 		return dniCorrecte;
 	}
 	/*
->>>>>>> 3ed22f68f3c682fffe92d26a6ead92da33e36b49
 	* Funcion que sirve para filtrar el tipo de mensaje a mostrar segun el error
 	* @param: ID de la casilla
 	* @return: el msj segun el ID
