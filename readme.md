@@ -1,4 +1,3 @@
-Joaquín Reyes Lettieri
 
 Ejercicio Fomulario 1
 
