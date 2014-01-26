@@ -1,10 +1,9 @@
 <?php require_once('functions.php'); ?>
-<?php require_once('insert.php'); ?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Register</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +12,12 @@
 		<div class="head">
 			<h1>Join!</h1>
 		</div>
-		<?php menu(); ?>
+		<div class="login">
+			<?php login(); ?>
+		</div>
+		<div class="menu">
+			<?php menu(); ?>
+		</div>
 		<?php 
 			/* Comprobación de los datos introducidos */
 			if ( isset($_GET['login']) ) {
@@ -35,6 +39,10 @@
 				} else {
 					$_SESSION['error']['login'] = 'Ha habido un error. Min.3/Máx.10';
 				}
+				/* Falta comprobar el mail, password y repassword
+				de momento lo compruebo solo con el filtro de javascript */
+				$_SESSION['mail'] = $_GET['email'];
+				$_SESSION['password'] = $_GET['password'];
 
 				/* Si ha habido algun error */
 				if ( !is_null($_SESSION['error']) ) {
@@ -42,7 +50,8 @@
 					$_SESSION['msj']['opcional'] = 'Campos opcionales';
 					form();
 				} else {
-					success('regPersona');
+					$_SESSION['success'] = true;
+					success();
 				}
 			} else {
 				form();
