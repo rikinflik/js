@@ -11,13 +11,19 @@
 	<div class="wrap">
 		<div class="head">
 			<h1>Join!</h1>
-		</div>
-		<div class="login">
-			<?php login(); ?>
+			<?php foreach ($_COOKIE['logcook'] as $name => $value) {
+				$name = htmlspecialchars($name);
+				$value = htmlspecialchars($value);
+	 		  	echo "$name : $value <br />\n";
+			} ?>
 		</div>
 		<div class="menu">
 			<?php menu(); ?>
 		</div>
+		<div class="login reg">
+			<?php login(); ?>
+		</div>
+		
 		<?php 
 			/* Comprobación de los datos introducidos */
 			if ( isset($_GET['login']) ) {

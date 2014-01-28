@@ -19,29 +19,114 @@ li {
 }
 .sidebar {
 	background-color: rgba(244,255,234,0.5);
+	margin-bottom: 3%;
 }
 .sidebar ul li {
 	display: inline-table;
 }
+.sidebar ul {
+	background-color: #DFDFDF;
+	color: white;
+	font-weight:100;
+	font-size: 15px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding:10px;
+}
 .form {
 	margin-top: 5%;
 }
-.login, .personal {
+.form h1, div.login.reg h1 {
+	background-color:#B6B6B6;
+	color: white;
+	font-weight:100;
+	font-size: 15px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding:10px
+}
+div.login.reg h1 {
+	cursor: pointer;
+}
+div.login.reg {
+	width: 100%;
+	padding: 0;
+	background-color: rgba(0,0,0,0.1);
+}
+div.reg{
+	width: 75%;
+	margin:0 auto;
+	padding: 15px;
+	display: inline-block;
+}
+div.login h1 span.plus {
+	background-image: url("http://www.conductr.net/wp-content/themes/passage-child/img/plus.png");
+}
+div.login h1.active span.plus {
+	background-image: url("http://www.conductr.net/wp-content/themes/passage-child/img/minus.png");
+}
+div.login h1 span {
+	width: 22px;
+	height: 22px;
+	display: block;
+	position: relative;
+	float: right;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s;
+	-webkit-transform: translateZ(0px);
+	-moz-transform: translateZ(0px);
+}
+div.formlog {
+	margin: 0 auto;
+	width: 25%;
+}
+#formlog.hidden {
+	display: none;
+	visibility: hidden;
+}
+#formlog.show {
+	display: inline;
+	visibility: visible;
+}
+#formlog input[type="checkbox"] {
+	width: auto;
+	height: auto;
+}
+#formlog input[type="submit"] {
+	margin-top: 25px;
+}
+div.login.reg input {
+	/*width: 25%;*/
+}
+div.login.reg label {
+	display: block;
+}
+
+ul.login, .personal {
 	/*background-color: rgba(244,255,234,0.5);*/
 	width: 440px;
 	float: left;
 	margin-bottom: 30px;
 }
-.login {
+ul.login {
 	margin-right: 15px;
 }
-.login li, .personal li {
+ul.login li, .personal li {
 	margin-bottom: 10px;
+}
+.personal li#telf {
+	margin-bottom: 0;
+}
+label[for="telf"], label[for="mov"] {
+	margin-top: 0;
 }
 .personal {
 	margin-left: 15px;
 }
-.login h3, .personal h3 {
+ul.login h3, .personal h3 {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 14px;

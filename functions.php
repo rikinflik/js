@@ -32,6 +32,7 @@
 	{
 ?>
 		<div class="form">
+			<h1>Nuevo registro</h1>
 			<form id="formulario" action="register.php" method="get">
 				<ul class="login">
 					<h3><?php echo $_SESSION['msj']['required']; ?></h3>
@@ -116,13 +117,38 @@
 	}
 
 	function login() {
+
+	if (isset($_COOKIE['logcook'])) {
+		// foreach ($_COOKIE['logcook'] as $name => $value) {
+		// 	$name = htmlspecialchars($name);
+		// 	$value = htmlspecialchars($value);
+  //     	  	echo "$name : $value <br />\n";
+
+		// }
+		echo 'hola! cookie';
+	} else { 
 ?>
-	<form action="login.php" method="get" name="login">
-		<label for="login">Nombre</label>
-		<input type="text" name="login">
-		<label for="password">Password</label>
-		<input type="password" name="password">
-		<input type="submit" value="Log in">
-	</form>
-<?php 
-	} ?>
+	<h1 id="mostrar" class="">Login <span class="plus"></span></h1>
+	<div class="formlog">
+		<form action="login.php" method="get" name="login" id="formlog" class="hidden">
+			<label for="login">Nombre</label>
+			<input type="text" name="login" value="<?php if(isset($_COOKIE['logcook'])) echo $_COOKIE['logcook']; ?>">
+			<label for="password">Password</label>
+			<input type="password" name="password">
+			<label for="remember">Recordar login</label>
+			<input type="checkbox" name="remember" id="remember">
+			<input type="submit" value="Log in">
+		</form>
+	</div>
+<?php
+		}
+ 
+	} 
+	function welcome()
+	{
+?>
+	<h1>Bienvenido usuario <?php echo $_COOKIE['logcook']; ?></h1>
+<?php
+	}
+
+?>

@@ -198,3 +198,64 @@
 		}
 		return msj;
 	}
+
+	/*funcion para mostrar el login */
+	// function mostrar() 
+	// {
+	// 	var button = document.getElementById('mostrar');
+	// 	button.eventListener ('click', function() {
+	// 		button.className +='active';
+	// 	})
+		
+	// }
+	var myFunctionReference = function() { 
+		element.className +='active';
+	}
+
+	var outFunction = function (){
+		element.className = '';
+	}
+	
+	//var element = document.getElementById('mostrar');
+	// element.onclick = function () { 
+	// 	element.className +='active'; 
+	// 	element.onclick = '';
+
+	// };
+	//element.onclick = function () { element.className += ''; };
+
+	//element.attachEvent('onclick', myFunctionReference);
+	//element.addEventListener('click', myFunctionReference , false);
+	//element.addEventListener('click', outFunction , false);
+	// if ( window.addEventListener ) {
+	// 	element.addEventListener ('click', myFunctionReference, false);
+	// } else {
+	// 	element.attachEvent('click', outFunction);
+	// }
+
+	function addEvent(element, evnt, funct){
+        return element.addEventListener(evnt, funct, false);
+	}
+
+	// example
+	addEvent(
+	    document.getElementById('mostrar'),
+	    'click',
+	    function () { 
+	    	var test = document.getElementById('mostrar');
+
+	    	if (test.className.match('active')) {
+	    		test.className = '';
+	    		document.getElementById('formlog').className = 'hidden';
+	    		console.log('dentro del if' + test.className);
+	    	} else {
+	    		test.className = 'active';
+	    		console.log('dentro del else ' + test.className);
+	    		document.getElementById('formlog').className = 'show';
+
+	    	}
+	   	}
+	);
+
+
+
