@@ -1,9 +1,4 @@
-
-<?php
-	function coockie($param) {
-		setcookie("logcook", $param, time() + 3600);
-	}
-?>
+<?php session_start(); ?>
 <?php require_once('functions.php'); ?>
 <!doctype html>
 <html lang="en">
@@ -22,8 +17,15 @@
 			<?php menu(); ?>
 		</div>
 		<div class="login reg">
-			<?php 
-				if (isset($_GET['login'])) {
+			<?php
+				if ($_GET['logout'] == 'exit') {
+			?>	
+				<h1 class="user-login">Vuelve pronto!</h1>
+				<?php session_destroy();?>
+				<h2><a href="login.php">Back to login</a></h2>
+			<?php
+				} else {
+					if (isset($_GET['login'])) {
 					$checkLogin = $_GET['login'];
 					$checkPass = md5(trim($_GET['password']));
 					echo 'pass in: '. $checkPass. '<br/>';
@@ -38,13 +40,11 @@
 						$fila = mysqli_fetch_array($query, MYSQL_ASSOC);
 						if ( $fila['password'] == $checkPass ) {
 							echo '<h1>La contraseña es correcta</h1>';
-							ini_set('session.auto_start', '1'); //buscar que hace
-					        $_SESSION['login'] = $checkLogin;
 					        if (isset($_GET['remember'])) {
 					        	echo 'esto es para recordar';
-					        	//setcookie(nombre,valor,tiempo)
-					            coockie($checkLogin);
+  						        $_SESSION['login'] = $checkLogin;
 
+					        	//setcookie(nombre,valor,tiempo)
 					            //setcookie("logcook", $_GET['login'], time() + 3600);
 					            //setcookie("psw", $checkPass);
 								// if (isset($_COOKIE['logcook'])) {
@@ -70,20 +70,14 @@
 					} else {
 						echo 'usuario INCORRECTO';
 					}
-					
-					//consulta del query con un if, via php.net mysqli_query
-					// $query = mysqli_query($link,$sentencia);
-					// //echo $query;
-					// if ( $query ) {
-					// 	$msj = '<h1>El usuario es incorrecto '. mysqli_error($link) .'</h1>';
-					// 	die($mjs);
-					// }
 					mysqli_close($link);
 					//echo 'estas en login.php';
 										
 				} else {
 					login();
 				}
+				}
+				
 			?>
 		</div>
 		

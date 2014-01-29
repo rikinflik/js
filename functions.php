@@ -15,7 +15,6 @@
 	<div class="sidebar">
 		<ul>
 			<li><a href="register.php">Register</a></li>
-			<li><a href="login.php">Log in</a></li>
 			<li>Profile</li>
 			<li>View</li>
 			<li>Upload</li>
@@ -99,7 +98,8 @@
 	* Funcion para insertar en la BBDD los datos introducidos en el formulario
 	* por el usuario.
 	*/
-	function success() {
+	function success() 
+	{
 
 		$loginSave = $_SESSION['login'];
 		$mailSave = $_SESSION['mail'];
@@ -116,39 +116,35 @@
 		session_destroy();
 	}
 
-	function login() {
-
-	if (isset($_COOKIE['logcook'])) {
-		// foreach ($_COOKIE['logcook'] as $name => $value) {
-		// 	$name = htmlspecialchars($name);
-		// 	$value = htmlspecialchars($value);
-  //     	  	echo "$name : $value <br />\n";
-
-		// }
-		echo 'hola! cookie';
-	} else { 
+	function login() 
+	{
+		if ( isset($_SESSION['login'])) {
 ?>
-	<h1 id="mostrar" class="">Login <span class="plus"></span></h1>
-	<div class="formlog">
-		<form action="login.php" method="get" name="login" id="formlog" class="hidden">
-			<label for="login">Nombre</label>
-			<input type="text" name="login" value="<?php if(isset($_COOKIE['logcook'])) echo $_COOKIE['logcook']; ?>">
-			<label for="password">Password</label>
-			<input type="password" name="password">
-			<label for="remember">Recordar login</label>
-			<input type="checkbox" name="remember" id="remember">
-			<input type="submit" value="Log in">
-		</form>
-	</div>
+		<h1 class="user-login">Hola! <?php echo $_SESSION['login']; ?> <span class="out"><a href="login.php?logout=exit">exit</a></span></h1>
+
+<?php
+		} else {
+				
+?>
+			<h1 id="mostrar" class="">Login <span class="plus"></span></h1>
+			<div class="formlog">
+				<form action="login.php" method="get" name="login" id="formlog" class="hidden">
+					<label for="login">Nombre</label>
+					<input type="text" name="login" value="<?php if(isset($_COOKIE['logcook'])) echo $_COOKIE['logcook']; ?>">
+					<label for="password">Password</label>
+					<input type="password" name="password">
+					<label for="remember">Recordar login</label>
+					<input type="checkbox" name="remember" id="remember">
+					<input type="submit" value="Log in">
+				</form>
+			</div>
 <?php
 		}
- 
-	} 
+	}
+
 	function welcome()
 	{
-?>
-	<h1>Bienvenido usuario <?php echo $_COOKIE['logcook']; ?></h1>
-<?php
+		echo '<h1>Bienvenido usuario'.$_SESSION['login']. '</h1>';
 	}
 
 ?>

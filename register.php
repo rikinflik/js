@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php require_once('functions.php'); ?>
 <!doctype html>
 <html lang="en">
@@ -11,11 +12,6 @@
 	<div class="wrap">
 		<div class="head">
 			<h1>Join!</h1>
-			<?php foreach ($_COOKIE['logcook'] as $name => $value) {
-				$name = htmlspecialchars($name);
-				$value = htmlspecialchars($value);
-	 		  	echo "$name : $value <br />\n";
-			} ?>
 		</div>
 		<div class="menu">
 			<?php menu(); ?>

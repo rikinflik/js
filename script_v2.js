@@ -199,6 +199,11 @@
 		return msj;
 	}
 
+	function reloadPage()
+	{
+		location.reload();
+	}
+
 	/*funcion para mostrar el login */
 	// function mostrar() 
 	// {
@@ -256,6 +261,12 @@
 	    	}
 	   	}
 	);
-
+	 addEvent (
+	 	document.getElementById('back'),
+	 	'onload',
+	 	function() {
+	 		location.reload();
+	 	}
+	 	);
 
 
