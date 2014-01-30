@@ -1,0 +1,40 @@
+@import url('../style.css');
+
+.wrap {
+	width: 50%;
+}
+.wrap h1 {
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 20px;
+	margin: 5% 0;
+	letter-spacing: 1px;
+	color: white;
+	background-color: #B3B3B3;
+}
+span.plus {
+	background-image: url("http://www.conductr.net/wp-content/themes/passage-child/img/plus.png");
+}
+span.plus:hover {
+	background-color: rgba(122,255,0,0.5);
+	cursor: pointer;
+}
+.formMail span {
+	width: 22px;
+	height: 22px;
+	display: block;
+	position: relative;
+	float: right;
+	padding: 3%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease 0s;
+	-moz-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s;
+	-webkit-transform: translateZ(0px);
+	-moz-transform: translateZ(0px);
+}
+input[name="mail"].current {
+	width: 90%;
+	display: inline-block;
+}

@@ -261,12 +261,5 @@
 	    	}
 	   	}
 	);
-	 addEvent (
-	 	document.getElementById('back'),
-	 	'onload',
-	 	function() {
-	 		location.reload();
-	 	}
-	 	);
 
 
