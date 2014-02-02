@@ -15,8 +15,21 @@
 span.plus {
 	background-image: url("http://www.conductr.net/wp-content/themes/passage-child/img/plus.png");
 }
+span.minus {
+	background-image: url("http://www.conductr.net/wp-content/themes/passage-child/img/minus.png");
+}
+span.plus {
+	background-color: rgba(19,255,0,0.2);
+}
 span.plus:hover {
 	background-color: rgba(122,255,0,0.5);
+	cursor: pointer;
+}
+span.minus {
+	background-color: rgba(192,24,24,0.5);
+}
+span.minus:hover {
+	background-color: rgba(0,0,0,0.5);
 	cursor: pointer;
 }
 .formMail span {
@@ -25,7 +38,7 @@ span.plus:hover {
 	display: block;
 	position: relative;
 	float: right;
-	padding: 3%;
+	padding: 18px;
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease 0s;
@@ -34,7 +47,11 @@ span.plus:hover {
 	-webkit-transform: translateZ(0px);
 	-moz-transform: translateZ(0px);
 }
-input[name="mail"].current {
+
+input[name="mail[]"].current {
 	width: 90%;
 	display: inline-block;
+}
+input[name="mail[]"].mclass {
+	margin-bottom: 15px;
 }

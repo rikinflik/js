@@ -8,13 +8,22 @@
 <body>
 	<div class="wrap">
 		<h1>Registrar una persona y mails</h1>
-		<form action="index.php" method="get" class="formMail">
+		<?php 
+			if (isset($_GET['mail'])) {
+				$arrayMails = $_GET['mail'];
+				foreach ($arrayMails as $mail) {
+					echo 'mail: '.$mail.'<br/>';
+				}
+			} else {
+		 ?>
+		 <form id="formMails" action="index.php" method="get" class="formMail" >
 			<label for="nombre">Nombre</label>
 			<input type="text" name="nombre">
 			<label for="mail">Mail</label>
-			<input type="text" name="mail" class="current"><span class="plus"></span>
+			<input type="text" name="mail[]" class="current" value="" ><span id="add" class="plus"></span>
 			<input type="submit" value="Guardar">
 		</form>
+		<?php } ?>
 	</div>
 	<script src="script.js"></script>
 </body>
