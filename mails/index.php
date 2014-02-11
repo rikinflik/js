@@ -10,6 +10,7 @@
 		<h1>Registrar una persona y mails</h1>
 		<?php 
 			if (isset($_GET['mail'])) {
+				echo 'Guardado en la BBDD: '.$_GET['nombre'].' con los siguientes e-mails<br/>';
 				$arrayMails = $_GET['mail'];
 				foreach ($arrayMails as $mail) {
 					echo 'mail: '.$mail.'<br/>';

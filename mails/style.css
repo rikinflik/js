@@ -1,4 +1,6 @@
+/*@import url('http://jrltt.net/test/fp/style.css');*/
 @import url('../style.css');
+
 
 .wrap {
 	width: 50%;
@@ -11,6 +13,10 @@
 	letter-spacing: 1px;
 	color: white;
 	background-color: #B3B3B3;
+}
+span.hidden {
+	display: none;
+	visibility: hidden;
 }
 span.plus {
 	background-image: url("http://www.conductr.net/wp-content/themes/passage-child/img/plus.png");
@@ -38,7 +44,7 @@ span.minus:hover {
 	display: block;
 	position: relative;
 	float: right;
-	padding: 18px;
+	padding: 19px;
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease 0s;
