@@ -57,6 +57,7 @@
 </head>
 	<body>
 		<h1>asjfñdsanflñndsakfnlñasdnfñsadknfkñlas</h1>
+		<h1>Hola</h1>
 		<div id="comunitat">
 			<select name="comunitat" onchange="canvi_comunitat(this.value),limpiarMunicipi()">
 				<?php
