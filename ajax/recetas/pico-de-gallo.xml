@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe PUBLIC "-//Happy-Monkey//DTD RecipeBook//EN"
+"http://www.happy-monkey.net/recipebook/recipebook.dtd">
+<recipe>
+  <title>Pico De Gallo</title>
+  <img>http://wikijoan.dyndns.org/iesbalmes/wec/tenda/img/dish1.jpeg</img>
+  <recipeinfo>
+    <blurb>Great mild dip for tortilla chips.</blurb>
+
+    <genre>Mexican food</genre>
+
+    <author>David Horton</author>
+
+    <yield>Enough for one bag of torilla chips.</yield>
+  </recipeinfo>
+
+  <ingredientlist>
+    <ingredient><quantity>1</quantity> <unit>lb.</unit> <fooditem>Plum (roma)
+    tomatoes</fooditem>, diced</ingredient>
+
+    <ingredient><quantity>1</quantity> <fooditem>Small onion</fooditem>,
+    diced</ingredient>
+
+    <ingredient><quantity>1</quantity> <unit>large handful</unit>
+    <fooditem>cilantro</fooditem>, chopped with stems removed</ingredient>
+
+    <ingredient>Juice from <quantity>1</quantity>
+    <fooditem>lime</fooditem></ingredient>
+
+    <ingredient><fooditem>Salt</fooditem> to taste</ingredient>
+  </ingredientlist>
+
+  <preparation>Combine all ingredients in a <equipment>bowl</equipment>. Cover
+  and refrigerate for at least one hour to give the flavors time to
+  mingle.</preparation>
+
+  <serving>Serve with tortilla chips for a tongue-tingling appetizer. Pico de
+  gallo may also be used as a topping for tacos or quesadillas.</serving>
+
+  <notes>Adding some minced jalapeno pepper will give the recipe a little
+  kick.</notes>
+</recipe>

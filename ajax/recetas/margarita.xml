@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe PUBLIC "-//Happy-Monkey//DTD RecipeBook//EN"
+"http://www.happy-monkey.net/recipebook/recipebook.dtd">
+<recipe>
+  <title>Coctel Margarita</title>
+  <img>http://www.davislifemagazine.com/wp-content/uploads/2010/07/IMG_2818.jpg</img>
+  <recipeinfo>
+    <blurb>uhmmm Margarita</blurb>
+
+    <genre>Coctel</genre>
+
+    <author>Joaquin</author>
+
+    <yield>Bebida</yield>
+  </recipeinfo>
+
+  <ingredientlist>
+    <ingredient><quantity>2</quantity> <unit>partes</unit> <fooditem>Tequila</fooditem></ingredient>
+    <ingredient><quantity>1</quantity><unit>parte</unit> <fooditem>licor triple seco o Cointreau</fooditem></ingredient>
+    <ingredient><quantity>1</quantity> <unit>parte</unit> <fooditem>jugo de lima o limón</fooditem></ingredient>
+    <ingredient><quantity>4</quantity> <unit> </unit> <fooditem>hielo</fooditem></ingredient>
+    <ingredient><quantity>1</quantity> <unit> pizca</unit> <fooditem>sal</fooditem></ingredient>
+
+  </ingredientlist>
+
+  <preparation>Introduces hielo picado dentro de una <equipment>coctelera</equipment> y acto seguido todos los ingredientes, agitamos hasta que notemos que la propia coctelera hace escarcha. En un <equipment>vaso</equipment> de margarita con sal en el borde viertes el contenido y le añades una rodaja de limón en el borde para decorar.
+Como ya hemos comentado, existen multitud de variedades de cócteles margarita a los que se le añade fruta como fresas o se les cambia el triple seco por Curaçao azul. Todo es cuestión de ir probando y elegir la que más te guste.</preparation>
+
+  <serving>Servimos y a disfrutar :)</serving>
+
+</recipe>

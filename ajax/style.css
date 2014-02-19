@@ -1,0 +1,25 @@
+body {
+	font: 12px/14px Helvetica;
+	background-color: #EBE8D9;
+}
+h1,h2,h3,h4, h5 {
+	font-weight: 100;
+	margin: 20px 0 15px;
+}
+h1 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
+.wrap {
+	width: 768px;
+	margin: 35px auto 0 ;
+}
+#formulari {
+	width: 20%;
+	margin-right: 3%;
+	float: left;
+}
+#recetas {
+	width: 75%;
+	float: left;
+}

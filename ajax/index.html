@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Receptes AJAX</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="wrap">
+			
+			<div id="formulari">
+				<h1>Receptes</h1>
+				<form name="frm_receptes" id="formu" action="#">
+					<select name="recipes" onchange="loadXMLDoc(this.value)">
+					<option value="" checked></option>
+					<option value="recetas/muerte-x-chocolate.xml">Muerte por Chocolate</option>
+					<option value="recetas/margarita.xml">Margarita</option>
+					<option value="recetas/pancakes.xml">Hippie Pancakes</option> <!-- el value es directamente el archivo XML -->
+					<option value="recetas/pico-de-gallo.xml">Pico de Gallo</option>
+
+					</select><br />
+				</form>
+			</div>
+			<div id="recetas">
+				<div id="titulo"></div>
+				<div id="img"><img /></div>
+				<div id="info"></div>
+				<div id="preparacion"></div>
+				<div id="servir"></div>
+			</div>
+		</div>
+		<script src="scripts.js"></script>
+	</body>
+</html>

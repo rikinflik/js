@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recipe PUBLIC "-//Happy-Monkey//DTD RecipeBook//EN"
+"http://www.happy-monkey.net/recipebook/recipebook.dtd">
+<recipe>
+  <title>Muerte por chocolate</title>
+  <img>http://colorado.indiebliss.com/wp-content/uploads/2010/03/doughnut1.jpg</img>
+  <recipeinfo>
+    <blurb>Muerte por chocolate</blurb>
+
+    <genre>Postre</genre>
+
+    <author>Joaquin</author>
+
+    <yield>Cacao</yield>
+  </recipeinfo>
+
+  <ingredientlist>
+    <ingredient><quantity>200</quantity> <unit>gr.</unit> <fooditem>Chocolate</fooditem>, para postres</ingredient>
+
+    <ingredient><quantity>200</quantity><unit>gr.</unit> <fooditem>Mantequilla</fooditem></ingredient>
+
+    <ingredient><quantity>200</quantity> <unit>gr.</unit> <fooditem>Azucar</fooditem></ingredient>
+
+  </ingredientlist>
+
+  <preparation>Entre 4 y 6 comensales. Lo primero que haremos es encender el horno a 200ºC. Ahora troceamos el chocolate y cortamos en trocitos la mantequilla, ponemos ambos ingredientes al baño maría removemos con una <equipment>cuchara de madera</equipment>, cuando esté derretido añadimos el azúcar y vamos removiendo hasta que se disuelva. Apagar el fuego y dejar enfriar. Una vez frío agregamos los huevos uno a uno mientras vamos mezclando bien. Finalmente agregamos la harina tamizándola, remover bien hasta que los ingredientes estén bien integrados. Vertemos en un <equipment>molde</equipment> engrasado no muy grande, y horneamos a 200ºC. durante 25-30 minutos aproximadamente. Pinchamos con un palito y si sale limpio ya está, no dejar mucho más tiempo ya que se trata de un postre tierno y jugoso si lo dejamos más tiempo se secará demasiado.</preparation>
+
+  <serving>Servimos y a disfrutar :)</serving>
+
+</recipe>
